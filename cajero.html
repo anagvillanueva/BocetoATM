@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu ATM online</title>
+</head>
+
+<body>
+    <nav>
+                <a href="#">
+                    ¡Tu cajero online!
+                </a>
+                <span id="saludo"></span>
+    </nav>
+
+    <div>
+        <div>
+            <div>
+                <form>
+
+                    <div>
+                        <button type="button" id="btnConsultar"
+                            onclick="">Consultar saldo</button>
+                    </div>
+
+                    <div>
+                        <input type="number"placeholder="$" id="depositar">
+                        <button type="button" id="btnDepositar">Ingresar monto</button>
+                    </div>
+
+                    <div>
+                        <input type="number" placeholder="$" id="retirar">
+                        <button type="button" id="btnRetirar" onclick="retirarMonto()">Retirar monto</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+            <div>
+                <form >
+                    <div class="resultado">
+                        <span id="transaccion"></span>
+                    </div>
+                    <div class="">
+                        <span id="nuevoSaldo"></span>
+                    </div>
+                    <div class="">
+                        <span id="saldo"></span>
+                    </div>
+                    <div class="">
+                        <span id="alerta"></span>
+                    </div>
+                    <div class="">
+                        <span id="alertaSaldo"></span>
+                    </div>
+                    <div class="">
+                        <span id="alertaTransaccion"></span>
+                    </div>
+                </form>
+    </div>
+
+
+    <div>
+        <button id="salir" type="button"
+            onclick="mostrarInicio()">Salir</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
